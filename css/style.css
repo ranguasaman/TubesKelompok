@@ -91,6 +91,16 @@ body{
 	background-size: cover;
 	min-height:960px;
 }
+.header2{
+	background: url("../images/banner3.jpg") no-repeat;
+	background-size: cover;
+	min-height:960px;
+}
+.header3{
+	background: url("../images/banner4.jpg") no-repeat;
+	background-size: cover;
+	min-height:960px;
+}
 .header-top {
   padding: 6em 0;
 
