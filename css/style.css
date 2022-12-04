@@ -42,7 +42,7 @@ body{
 .header{
 	background: url("../images/banner.jpg") no-repeat;
 	background-size: cover;
-	min-height:865px;
+	min-height:960px;
 }
 .header-top {
   padding: 6em 0;
