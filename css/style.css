@@ -47,13 +47,13 @@ body{
   
   .searchTerm {
 	width: 100%;
-	border: 3px solid #d6a100;
+	border: 3px solid #af8401;
 	border-right: none;
 	padding: 5px;
 	height: 48px;
 	border-radius: 5px 0 0 5px;
 	outline: none;
-	color: #9DBFAF;
+	color: #a2c9b6;
 	font-size: medium;
   }
   
@@ -64,7 +64,7 @@ body{
   .searchButton {
 	width: 40px;
 	height: 48px;
-	border: 1px solid #d6a100;
+	border: 1px solid #c39302;
 	background: #d6a100;
 	text-align: center;
 	color: #fff;
