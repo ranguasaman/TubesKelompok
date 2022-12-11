@@ -59,12 +59,31 @@ app.get('/graftakberarah', async (req, res) => {
     res.render('graftakberarah');
 });
 
+const getDataBook1 = (conn) => {
+    return new Promise ((resolve, rejects) => {
+        conn.query(`SELECT * FROM book1`, (err, result) => {
+            if (err)
+            {
+                rejects(err);
+            }
+            else
+            {
+                resolve(result);
+            }
+        })
+    })
+}
+
 app.get('/pencarian', async (req, res) => {
     const conn = await dbConnect();
+    var book1= await getDataBook1(conn);
     conn.release();
-    res.render('pencarian');
+    res.render('pencarian',{
+        book1
+    });
 });
 
 app.listen(PORT, () => {
     console.log('Listening to port ' + PORT);
 });
+

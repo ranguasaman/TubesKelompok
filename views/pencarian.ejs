@@ -65,6 +65,41 @@ And I have add comment in code.
                         </div>
                      </div>
 </div> <!--End Slider Section-->
+<table class="table" border="">
+	<thead>
+	  <tr>
+		  <!-- <th scope="col">ID</th> -->
+		  <th scope="col">id</th>
+		  <th scope="col">Source</th>
+		  
+		  <th scope="col">Target</th>
+		  <th scope="col">Type</th>
+		  
+		  <th scope="col">weight</th>
+		  <th scope="col">book</th>
+	  </tr>
+	</thead>
+	<tbody>
+	<% for(let data of book1) { %>
+	<tr>
+		<!-- <td><%= data.id%></td> -->
+		<td><%= data.id%></td>    
+		<td><%= data.Source%></td>
+		<td><%= data.Target%></td>
+		<td><%= data.Type%></td>  
+		<td>RT <%= data.weight%></td>
+		<td>RW <%= data.book%></td>    
+		<td > 
+		  <div class="action">
+			<a href="/editRT/<%= data.nama%>"><i id="edit" class="fa-solid fa-pen-to-square fa-2x"></i></a>
+			<a href="/delete/<%= data.id %>"onClick="return confirm('Apakah yakin akan menghapus?')"><i id="delete" class="fa-solid fa-trash-can fa-2x"></i></a>
+			
+		  </div>
+		</td>         
+	</tr>
+	<% } %>
+	</tbody>
+  </table>
 
 	</body>
 </html>
